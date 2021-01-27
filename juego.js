@@ -1,9 +1,11 @@
-function crearEnemigo(){
-    console.log("enemigo creado");
-}
-function enemigos(){
-    for(i=0; i<10;i++){
-        console.log("Valor contador: " + i)
-        crearEnemigo();
+
+function tablas(){
+
+    for(tabla=0; tabla<10;tabla++){
+        console.log("Tabla del: " + tabla);
+        for(multiplicador=0; multiplicador<10;multiplicador++){
+            var resultado = tabla*multiplicador;
+            console.log(tabla + "x" + multiplicador + "=" + resultado);
+        }
     }
 }
